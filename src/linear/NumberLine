@@ -1,12 +1,12 @@
 <div class="container">
     <div class="bar">
-        <div class="represent">
-            <div class="number">72</div>
+        <div class="chunk col1">
+            <div class="number-popup">72</div>
         </div>
-        <div class="baseline"></div>
+        <div class="chunk col2"></div>
     </div>
 </div>
-
+    
 .container {
     width: 100%;
     height: 60px;
@@ -23,26 +23,29 @@
     justify-content: space-between;
 }
 
-.represent {
-    position: relative;
-    background-color: yellow;
-    flex: 72;
-}
-
-.baseline {
-    background-color: grey;
-    flex: 28;
-}
-
-.number {
+.number-popup {
     width: 32px;
     height: 18px;
     font-size: 12px;
     text-align: center;
     position: absolute;
-    right: -26px;
-    bottom: 8px;
+    right: -16px;
+    bottom: 10px;
     border-radius: 6px;
     background-color: orange;
     color: white;
+}
+
+.chunk {
+    position: relative;
+}
+
+.col1 {
+    background-color: yellow;
+    flex: 72;
+}
+
+.col2 {
+    background-color: grey;
+    flex: 28;
 }
