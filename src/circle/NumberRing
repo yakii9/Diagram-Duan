@@ -18,7 +18,7 @@
     margin: 0 20px;
 }
 
-.chart .before {
+.chart > .before {
     position: absolute;
     top: 0;
     right: 0;
@@ -29,7 +29,7 @@
     z-index: 1;
 }
 
-.chart .after {
+.chart > .after {
     position: absolute;
     top: 0;
     right: 0;
@@ -41,7 +41,7 @@
     z-index: 2;
 }
 
-.chart .chart-progress {
+.chart > .chart-progress {
     position: absolute;
     top: 0;
     right: 0;
