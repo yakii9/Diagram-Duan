@@ -1,0 +1,55 @@
+<div class="chart">
+    <div class="before"></div>
+    <div class="chart-progress"></div>
+    <div class="chart-text">
+        <strong>50</strong>
+        <span>%</span>
+    </div>
+    <div class="after"></div>
+</div>
+
+.chart {
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: relative;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.chart .before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.chart .after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 10px solid #999;
+    border-radius: 50%;
+    clip: rect(0, auto, auto, 50px);
+    z-index: 2;
+}
+
+.chart .chart-progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 10px solid #999;
+    border-radius: 50%;
+    clip: rect(0, auto, auto, 50px);
+    z-index: 3;
+    transform: rotate(108deg);
+}
