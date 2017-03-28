@@ -1,0 +1,16 @@
+<div class="btn">
+    <span class="btnText">Click me!</span>
+</div>
+
+.btn {
+    width: 6em;
+    height: 3em;
+    transform: skew(-45deg);
+    background-color: #655;
+}
+
+.btnText {
+    display: block;
+    transform: skew(45deg);
+    line-height: 2em;
+}
