@@ -1,0 +1,33 @@
+<div class="container2">
+	<p>The await expression causes async function execution to pause, to wait for the Promise's resolution, and to resume the async function execution when the value is resolved. It then returns the resolved value. If the value is not a Promise, it's converted to a resolved Promise.</p>
+</div>
+
+// 这里的body代表的是父容器
+body, .container2::after {
+	background: url("http://elelur.com/data_images/mammals/tiger/tiger-04.jpg") 0 / cover fixed;
+}
+
+.container2 {
+	width: 400px;
+	margin: 300px auto;
+	position: relative;
+	box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, .4);
+	overflow: hidden;
+}
+
+.container2 > * {
+	position: relative;
+	z-index: 99;
+	text-align: justify;
+}
+
+.container2::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	filter: blur(20px);
+	margin: -30px;
+}
