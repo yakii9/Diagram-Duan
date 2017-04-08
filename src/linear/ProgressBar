@@ -1,0 +1,42 @@
+<div class="progress-bar" id="progress_bar">
+  <div id="progress_current"></div>
+  <div id="progress_left"></div>
+</div>
+
+.progress-bar {
+	width: 100%;
+  height: 2px;
+  display: flex;
+  justify-content: space-between;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+
+#progress_current {
+	background-color: #53a733;
+}
+
+#progress_left {
+	background-color: transparent;
+	flex: 100;
+}
+
+
+showProgress: function() {
+  var progress_range = 0;
+
+  var bar = document.getElementById("progress_bar");
+  if (!bar) return;
+
+  var timer = setInterval(function () {
+    progress_range += 1;
+    infrastructure.setCssById("progress_current", progress_range, "flex");
+    infrastructure.setCssById("progress_left", 100 - progress_range, "flex");
+  }, 100)
+
+  setTimeout(function () {
+    clearInterval(timer);
+  }, 10000);
+}
